@@ -74,7 +74,7 @@ let getData = async () => {
 
   createAvatarImage(json[0].owner.avatar_url);
   changeFavicon(json[0].owner.avatar_url);
-  setPinnedRepo(json.find(r => r.name === 'jr-gopnik-akairo'));
+  setPinnedRepo(json.find(r => r.name === 'jr-gopnik'));
   setRepos(json);
 
   console.log(json[0].owner);
